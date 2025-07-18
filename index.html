@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '631777379799364');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=631777379799364&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+    
+  
+  <meta charset="UTF-8" />
+  <title>مزيل الوبر</title>
+  
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+    }
+
+    @keyframes glow {
+      0%, 100% {
+        text-shadow: 0 0 5px #ffcccc, 0 0 10px #ff6666, 0 0 15px #ff0000;
+      }
+      100% {
+        text-shadow: 0 0 15px #ffcccc, 0 0 30px #ff6666, 0 0 45px #ff0000;
+      }
+    }
+
+    .glowing-alert {
+      animation: glow 1s infinite;
+    }
+
+    #productImage {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,255,255,0.2);
+      transition: transform 1s ease-in-out;
+    }
+  .product-box {
+      position: relative;
+      width: 300px;
+      margin: 50px auto;
+    }
+
+.product-box img {
+      width: 100%;
+      display: block;
+    }
+
+    /* ✅ بطاقة السعر */
+    .price-tag {
+      position: absolute;
+      top: 100px;
+      right: 120px;
+      width: 70px;
+      height: 95px;
+      background: rgb(150, 2, 2);
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      padding-top: 60px;
+      border-radius: 6px;
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+      box-shadow: 0 0 12px rgba(255, 0, 0, 0.5);
+      z-index: 10;
+      transform: rotate(5deg);
+      transform-origin: top center;
+      animation: swing 3s infinite ease-in-out;
+    }
+
+    /* ✅ نقطة التثبيت */
+    .price-tag::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      border: 2px solid #000;
+      border-radius: 50%;
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 11;
+      
+    }
+
+    @keyframes swing {
+      0% { transform: rotate(5deg); }
+      50% { transform: rotate(-4deg); }
+      100% { transform: rotate(5deg); }
+    }
+
+    /* ✅ SVG الحبل */
+    .string-svg {
+      position: absolute;
+      top: 0;
+      right: 160px;
+      width: 60px;
+      height: 120px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .string-svg path {
+      stroke: #ccc;
+      stroke-width: 2;
+      fill: none;
+    }
+    .product-hole {
+  position: absolute;
+  top: -5px;
+  right: 182px;
+  width: 12px;
+  height: 12px;
+  background-color: #4e4545;
+  border: 2px solid #888;
+  border-radius: 50%;
+  z-index: 5;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5) inset;
+}
+
+
+  </style>
+</head>
+<body>
+<div class="landing wrapper">
+  <div style="padding: 50px; display: flex; align-items: center; justify-content: center;margin-left: 850px;margin:10px auto ;max-width: 150px;">
+  <img src="ChatGPT Image Jul 8, 2025, 07_48_32 PM.png" alt="Get4-You Logo" style="height: 100px;">
+</div>
+  <!-- الزر -->
+<!-- الزر -->
+<section style="text-align: center; margin-top: 40px;">
+  <button onclick="document.getElementById('brandVideo').style.display='flex'" style="
+    padding: 12px 25px;
+    background-color: #00ffcc;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,255,255,0.3);
+  ">
+     شاهد من نحن
+  </button>
+</section>
+
+
+<!-- المربع المنبثق وسط الشاشة بصندوق أزرق أنيق -->
+<div id="brandVideo" style="
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+">
+  <div style="
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,255,255,0.2);
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+  ">
+    <video id="brandVideoPlayer" controls style="width: 100%; border-radius: 15px;">
+      <source src="0708.mp4" type="video/mp4">
+      متصفحك لا يدعم تشغيل الفيديو.
+    </video>
+    <br>
+    <button id="closeBrandVideoBtn" style="
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff0066;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    ">
+      ❌ إغلاق الفيديو
+    </button>
+  </div>
+</div>
+
+</div>
+
+
+  <div style="background:linear-gradient(90deg, #ff0057, #ff7e5f, #ff0057); color: white; text-align: center; padding: 20px 0; font-weight: bold; letter-spacing: 1px; font-size: 1.3em; width: 1000px; box-shadow: 0 8px 20px rgba(255,0,87,0.6); position: relative; z-index: 1000; border-radius: 10px; margin: 10px auto 0 auto;">
+    <span class="glowing-alert">🚨</span> الكمية محدودة! سارع بالحجز قبل نفاد المخزون.
+  </div>
+
+  <h2 style="text-align: center; font-size: 2em; margin: 30px auto 10px auto; color: #1115da; text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);">
+    جهاز إزالة الوبر الذكي 
+  </h2>
+
+  <div style="width: 90%; max-width: 1000px; margin: 50px auto; padding: 30px; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); box-shadow: 0 0 30px rgba(20, 74, 154, 0.7); border-radius: 20px; display: flex; align-items: flex-start; gap: 30px; flex-wrap: wrap;">
+    
+    <!-- ✅ صورة المنتج (يسار) -->
+    <!-- ✅ صورة المنتج (يسار) -->
+<div style="flex: 1; min-width: 250px; position: relative;" class="product-box">
+   <div class="product-hole"></div>
+  <!-- ✅ SVG الحبل المقوس -->
+  <svg class="string-svg" viewBox="0 0 60 120">
+    <path d="M30,0 Q30,60 40,100" />
+  </svg>
+
+  <!-- ✅ بطاقة السعر -->
+  <div class="price-tag">150 DH</div>
+
+  <!-- ✅ صورة المنتج -->
+  <img id="productImage" src="61Lpj9ipB-L._AC_UF1000_1000_QL80___1_-removebg-preview.png" alt="Lint Remover">
+
+</div>
+
+
+    <!-- ✅ النصوص (يمين) -->
+    <div style="flex: 1; text-align: right; min-width: 250px;">
+      <div>
+        <h1 style="font-size: 2.3em; margin: 0 0 15px 0;">وداعًا للوبر</h1>
+        <p style="font-size: 1.1em; margin: 0;">استرجعي أناقة ملابسك في ثوانٍ مع جهاز إزالة الوبر العصري 🔥</p>
+        <p style="font-size:1.1em ;margin:0;">يحمي أقمشتك من التلف، ويزيل الوبر بلطف وفعالية 👕🛡️</p>
+        <p style="font-size:1.1em ;margin:0;">خفي آثار الاستخدام المتكرر بسهولة، بضغطة زر واحدة فقط! ✨</p>
+      </div>
+
+      <!-- زر الطلب عبر واتساب -->
+      <div style="margin-top: 20px; margin-right: 50px;margin-bottom: 20px;">
+        <a href="#order-form" id="show-order-form-btn"
+           style="display: inline-block; background: linear-gradient(135deg, #00ffcc, #00cc99); color: black; font-weight: bold; font-size: 1.1em; padding: 12px 25px; border-radius: 12px; text-decoration: none; box-shadow: 0 0 20px rgba(0, 255, 204, 0.4); transition: all 0.3s ease;"
+           onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+           اطلب الآن
+        </a>
+      </div>
+       <div style="margin-right:90px;margin-bottom: 5px;">أو</div>
+      <div style="margin-top: 30px; margin-right: 5px;">
+        <a id="orderBtn" href="https://wa.me/212700307737" target="_blank" rel="noopener" style="display: inline-block; background: linear-gradient(135deg, #00ffcc, #00cc99); color: black; font-weight: bold; font-size: 1.1em; padding: 12px 25px; border-radius: 12px; text-decoration: none; box-shadow: 0 0 20px rgba(0, 255, 204, 0.4); transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"dir="rtl">
+          اطلب  عبر WhatsApp
+        </a>
+      </div>
+      
+
+       
+       
+       <script>
+  window.addEventListener('load', function () {
+    var orderBtn = document.getElementById('orderBtn');
+    if (orderBtn) {
+      orderBtn.addEventListener('click', function () {
+        fbq('track', 'Lead');
+      });
+    }
+  });
+</script>
+
+
+        <p style="font-size: 1.1em; margin: 20px auto 0 auto; padding: 10px 20px; color: #00ffcc; background: rgba(0, 255, 204, 0.1); border: 1px solid #525ad1; width: fit-content; border-radius: 15px; text-align: center; font-weight: bold; box-shadow: 0 0 10px rgba(0,255,204,0.3); margin-right: 30px;">
+          الدفع عند الاستلام
+        </p>
+
+        <p style="font-size: 1.1em; margin: 10px auto 0 auto; padding: 10px 20px; color: #00ffcc; background: rgba(0, 255, 204, 0.1); border: 1px solid #378fdc; width: fit-content; border-radius: 15px; text-align: center; font-weight: bold; box-shadow: 0 0 10px rgba(0,255,204,0.3); margin-right: 30px;">
+          التوصيل مجاني
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ JavaScript لتبديل الصورة تلقائيًا -->
+  <script>
+    const images = [
+      "61Lpj9ipB-L._AC_UF1000_1000_QL80___1_-removebg-preview.png",
+      "ChatGPT Image Jun 27, 2025, 10_48_06 AM.png",
+      "ChatGPT Image Jun 29, 2025, 02_43_49 PM.png",
+      "uuuuuuuuuuuuuuuuuuuu.jpg",
+      "518A3FAcU9L._AC_SX679_.jpg"
+    ];
+
+    let currentIndex = 0;
+    const productImage = document.getElementById("productImage");
+
+    setInterval(() => {
+      productImage.style.transform = "translateX(80px)";
+      setTimeout(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        productImage.src = images[currentIndex];
+        productImage.style.transform = "translateX(0)";
+      }, 300);
+    }, 3000);
+  </script>
+  <h2 style="text-align: center; font-size: 2em; margin: 30px auto 10px auto; color: #25c0ce; text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);">
+    المميزات
+  </h2>
+<!-- ✅ صندوق أزرق فارغ للتجربة -->
+<div style="
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  box-shadow: 0 0 30px rgba(20, 74, 154, 0.7);
+  border-radius: 20px;
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+">
+  <!-- هنا يمكننا لاحقًا إضافة المميزات -->
+   <!-- ✅ قسم المميزات: 6 بطاقات -->
+<div style="margin-top: 40px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; text-align: right;">
+
+  <!-- بطاقة 1 -->
+  <div style="flex: 1 1 250px; background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; box-shadow: 0 0 15px rgba(0,255,255,0.1);">
+    <p style="font-size: 2em; margin: 0;">🔋</p>
+    <h3 style="margin: 10px 0 5px 0; color: #00ffcc;">يعمل بالشحن</h3>
+    <p style="margin: 0;">لا حاجة للبطاريات، اشحنه واستمتع باستخدام سهل ومتواصل.</p>
+  </div>
+
+  <!-- بطاقة 2 -->
+  <div style="flex: 1 1 250px; background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; box-shadow: 0 0 15px rgba(0,255,255,0.1);">
+    <p style="font-size: 2em; margin: 0;">🧼</p>
+    <h3 style="margin: 10px 0 5px 0; color: #00ffcc;">سهل التنظيف</h3>
+    <p style="margin: 0;">مزود بخزان قابل للإزالة والتنظيف خلال ثوانٍ.</p>
+  </div>
+
+  <!-- بطاقة 3 -->
+  <div style="flex: 1 1 250px; background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; box-shadow: 0 0 15px rgba(0,255,255,0.1);">
+    <p style="font-size: 2em; margin: 0;">👕</p>
+    <h3 style="margin: 10px 0 5px 0; color: #00ffcc;">لطيف على الملابس</h3>
+    <p style="margin: 0;">يزيل الوبر بلطف دون أن يُتلف الأقمشة الحساسة.</p>
+  </div>
+
+  <!-- بطاقة 4 -->
+  <div style="flex: 1 1 250px; background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; box-shadow: 0 0 15px rgba(0,255,255,0.1);">
+    <p style="font-size: 2em; margin: 0;">🔘</p>
+    <h3 style="margin: 10px 0 5px 0; color: #00ffcc;">تشغيل بضغطة</h3>
+    <p style="margin: 0;">زر واحد فقط للتشغيل والإيقاف بكل سهولة.</p>
+  </div>
+
+  <!-- بطاقة 5 -->
+  <div style="flex: 1 1 250px; background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; box-shadow: 0 0 15px rgba(0,255,255,0.1);">
+    <p style="font-size: 2em; margin: 0;">✈️</p>
+    <h3 style="margin: 10px 0 5px 0; color: #00ffcc;">مناسب للسفر</h3>
+    <p style="margin: 0;">حجمه صغير وخفيف، يمكنك أخذه معك أينما ذهبت.</p>
+  </div>
+
+  <!-- بطاقة 6 -->
+  <div style="flex: 1 1 250px; background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; box-shadow: 0 0 15px rgba(0,255,255,0.1);">
+    <p style="font-size: 2em; margin: 0;">✨</p>
+    <h3 style="margin: 10px 0 5px 0; color: #00ffcc;">تصميم أنيق</h3>
+    <p style="margin: 0;">شكله العصري يضيف لمسة فخامة لأي مكان يوضع فيه.</p>
+  </div>
+
+</div>
+</div>
+ <h2 style="margin-left: 650px;color: #1cbad9;">ما الذي يفعله منتجنا؟</h2>
+<div style="
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  box-shadow: 0 0 30px rgba(20, 74, 154, 0.7);
+  border-radius: 20px;
+  color: rgb(15, 84, 212);
+  font-size: 1.1em;
+  text-align: center;
+">
+<section id="what-it-does" style="padding: 40px; text-align: center;">
+  
+
+  
+    <div style="
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    ">
+      <img src="12.jpeg" alt="تأثير المنتج" style="width: 100%; border-radius: 10px;">
+      <img src="22.jpg" alt="تأثير المنتج" style="width: 100%; border-radius: 10px;">
+      <img src="55.jpg" alt="تأثير المنتج" style="width: 100%; border-radius: 10px;">
+      <img src="8.webp" alt="تأثير المنتج" style="width: 100%; border-radius: 10px;">
+    </div>
+  </div>
+</section>
+
+  </div>
+</section>
+
+
+<h2 style="text-align: center; font-size: 2em; margin: 30px auto 10px auto; color: #25c0ce; text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);">
+    طريقة الإستخدام
+  </h2>
+<div style="
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  box-shadow: 0 0 30px rgba(20, 74, 154, 0.7);
+  border-radius: 20px;
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+">
+<!-- ✅ قسم طريقة الاستخدام -->
+<div style="margin: 50px auto; width: 90%; max-width: 1000px; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); padding: 30px; border-radius: 20px; box-shadow: 0 0 20px rgba(0,255,255,0.1);">
+  <h2 style="text-align: center; color: #00ffcc; margin-bottom: 30px;">طريقة الاستخدام في 3 خطوات بسيطة</h2>
+
+  <ol style="list-style: none; padding: 0; margin: 0; text-align: right;">
+    <li style="margin-bottom: 20px;">
+      <span style="font-size: 1.5em;">🔌</span> <strong>اشحن الجهاز:</strong> وصّله بكابل USB وانتظر حتى يكتمل الشحن.
+    </li>
+    <li style="margin-bottom: 20px;">
+      <span style="font-size: 1.5em;">👕</span> <strong>مرّره على الملابس:</strong> بلطف على المناطق التي بها وبر أو زغب.
+    </li>
+    <li style="margin-bottom: 0;">
+      <span style="font-size: 1.5em;">🧼</span> <strong>نظّف الخزان:</strong> بعد الاستخدام، افتح الخزان وافرغ الوبر المتجمع.
+    </li>
+  </ol>
+
+</div> <!-- إغلاق صندوق طريقة الاستخدام -->
+
+
+</div>
+ <!-- ✅ ما الذي يجعلنا مميزين -->
+   <h2 style="text-align: center; color: #00ffcc; margin-bottom: 30px;">ما الذي يجعل  منتجنا مميز؟ 🌟</h2>
+<div style="margin: 50px auto; width: 90%; max-width: 1000px; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); padding: 30px; border-radius: 20px; box-shadow: 0 0 20px rgba(0,255,255,0.1);">
+  
+  <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between;">
+
+    <!-- ✅ منتجنا -->
+    <div style="flex: 1 1 300px; background-color: rgba(0, 255, 204, 0.05); padding: 20px; border-radius: 15px; border: 2px solid #00ffcc;">
+      <h3 style="color: #00ffcc;">✅ منتجنا</h3>
+      <ul style="padding-right: 20px; line-height: 1.8em;">
+        <li>يُشحن بالكابل 🔋</li>
+        <li>تصميم أنيق وحديث ✨</li>
+        <li>لا يضر الأقمشة الحساسة 👕</li>
+        <li>تشغيل سهل بزر واحد 🔘</li>
+        <li>سهل التنظيف وسريع الاستخدام ⚡</li>
+      </ul>
+    </div>
+
+    <!-- ❌ المنتجات العادية -->
+    <div style="flex: 1 1 300px; background-color: rgba(255, 0, 0, 0.05); padding: 20px; border-radius: 15px; border: 2px solid #ff0055;">
+      <h3 style="color: #ff0055;">❌ منتجات عادية</h3>
+      <ul style="padding-right: 20px; line-height: 1.8em;">
+        <li>تستهلك البطاريات بشكل دائم 🔋</li>
+        <li>شكل تقليدي وغير جذاب 😴</li>
+        <li>قد تُتلف الملابس الحساسة ❗</li>
+        <li>تشغيل معقد وصعب الفهم 🔄</li>
+        <li>ثقيلة وغير عملية للاستخدام اليومي 🐌</li>
+      </ul>
+    </div>
+
+  </div>
+  
+ </div>
+ <h2 style="text-align: center; color: #00ffcc; margin-bottom: 30px;">
+    ماذا يقول عملاؤنا؟ 💬
+  </h2>
+<!-- ✅ صندوق تقييمات العملاء - مستقل -->
+<div style="margin: 50px auto; width: 90%; max-width: 1000px;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,255,255,0.1);">
+
+  <!-- 🟦 العنوان -->
+ 
+  
+
+  <!-- ✅ سنضيف التقييمات هنا -->
+   <!-- ✅ تقييمات العملاء -->
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; text-align: right;">
+
+  <!-- تقييم 1 -->
+  <div style="flex: 1 1 300px; background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; box-shadow: 0 0 10px rgba(0,255,204,0.1);">
+    <p style="margin: 0; font-weight: bold; color: #00ffcc;">👩‍🦰 سعاد من مراكش</p>
+    <p style="margin: 5px 0;">⭐️⭐️⭐️⭐️⭐️</p>
+    <p style="margin: 0;">المنتج أكثر من رائع! خلاني نرجع نلبس ملابس كنت خلاص نسيتها بسبب الوبر 💖</p>
+  </div>
+
+  <!-- تقييم 2 -->
+  <div style="flex: 1 1 300px; background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; box-shadow: 0 0 10px rgba(0,255,204,0.1);">
+    <p style="margin: 0; font-weight: bold; color: #00ffcc;">👩‍💼 ليلى من الدار البيضاء</p>
+    <p style="margin: 5px 0;">⭐️⭐️⭐️⭐️</p>
+    <p style="margin: 0;">خفيف وسهل الاستعمال، وفكرة أنه يُشحن بدل البطاريات مريحة بزاف 🔋✨</p>
+  </div>
+
+  <!-- تقييم 3 -->
+  <div style="flex: 1 1 300px; background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; box-shadow: 0 0 10px rgba(0,255,204,0.1);">
+    <p style="margin: 0; font-weight: bold; color: #00ffcc;">👩‍👧‍👦 نزهة من فاس</p>
+    <p style="margin: 5px 0;">⭐️⭐️⭐️⭐️⭐️</p>
+    <p style="margin: 0;">وصلني في يومين فقط، والتوصيل كان مجاني! خدمة ممتازة 👏</p>
+  </div>
+  <!-- تقييم 4 -->
+  <div style="flex: 1 1 300px; background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; box-shadow: 0 0 10px rgba(0,255,204,0.1);">
+    <p style="margin: 0; font-weight: bold; color: #00ffcc;">👩 نادية من طنجة</p>
+    <p style="margin: 5px 0;">⭐️⭐️⭐️⭐️⭐️</p>
+    <p style="margin: 0;">استعملتو على جاكيت قديم ورجع جديد! أنصح به للجميع بدون تردد ✅</p>
+  </div>
+
+</div>
+
+</div>
+ <h2 style="text-align: center; color: #00ffcc; margin-bottom: 30px;">
+    الأسئلة الشائعة ❓
+  </h2>
+<!-- ✅ قسم الأسئلة الشائعة -->
+<div style="margin: 50px auto; width: 90%; max-width: 1000px;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,255,255,0.1); color: white;">
+
+
+ 
+
+  <div style="line-height: 1.8em; font-size: 1.05em; text-align: right; padding-right: 10px;">
+    <p><strong>🔹 هل الجهاز مناسب لجميع أنواع الأقمشة؟</strong><br>
+    نعم، الجهاز مصمم ليكون لطيفًا وآمنًا على الأقمشة الحساسة مثل الصوف والقطن والحرير.</p>
+
+    <p><strong>🔹 كم يستغرق شحن الجهاز بالكامل؟</strong><br>
+    حوالي 2 إلى 3 ساعات للحصول على شحنة كاملة تكفي لاستخدامات متعددة.</p>
+
+    <p><strong>🔹 هل هناك ضمان على المنتج؟</strong><br>
+    نعم، نقدم ضمان لمدة شهر ضد العيوب المصنعية.</p>
+
+    <p><strong>🔹 هل يمكنني استرجاع أو استبدال المنتج؟</strong><br>
+    بالتأكيد، يمكنك الاستبدال أو الإرجاع خلال 5 أيام من الاستلام إذا وُجد عيب في التصنيع.</p>
+
+    <p><strong>🔹 هل يمكنني الدفع عند الاستلام؟</strong><br>
+    نعم، وفرنا خدمة الدفع عند الاستلام لتسوق آمن وسريع.</p>
+  </div>
+
+</div>
+<div style="display: flex; justify-content: center; gap: 60px; margin: 30px auto; flex-wrap: wrap;">
+  
+  <!-- زر واتساب -->
+  <a href="https://wa.me/212700307737" target="_blank" rel="noopener"
+     style="background: linear-gradient(135deg, #00ffcc, #00cc99); color: black; font-weight: bold; font-size: 1.1em; padding: 12px 25px; border-radius: 12px; text-decoration: none; box-shadow: 0 0 20px rgba(0, 255, 204, 0.4); transition: all 0.3s ease;"
+     onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" dir="rtl">
+    اطلب  عبر WhatsApp
+  </a>
+
+  <!-- زر الطلب -->
+  <a href="#" id="show-order-form-btn"
+     style="background: linear-gradient(135deg, #00ffcc, #00cc99); color: black; font-weight: bold; font-size: 1.1em; padding: 12px 25px; border-radius: 12px; text-decoration: none; box-shadow: 0 0 20px rgba(0, 255, 204, 0.4); transition: all 0.3s ease;"
+     onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" dir="rtl">
+     اطلب الآن
+  </a>
+
+</div>
+
+
+<script>
+  // Video popup logic for "شاهد من نحن"
+  document.addEventListener("DOMContentLoaded", function () {
+    const brandVideoPopup = document.getElementById("brandVideo");
+    const brandVideoPlayer = document.getElementById("brandVideoPlayer");
+    const closeBrandVideoBtn = document.getElementById("closeBrandVideoBtn");
+    // Show popup when button is clicked
+    const showBtn = document.querySelector('button[onclick*="brandVideo"]');
+    if (showBtn) {
+      showBtn.addEventListener("click", function () {
+        brandVideoPopup.style.display = "flex";
+        brandVideoPlayer.play();
+      });
+    }
+    // Close popup and stop video
+    closeBrandVideoBtn.addEventListener("click", function () {
+      if (document.pictureInPictureElement) {
+        document.exitPictureInPicture();
+      }
+      brandVideoPlayer.pause();
+      brandVideoPlayer.currentTime = 0;
+      brandVideoPopup.style.display = "none";
+    });
+  });
+</script>
+
+<!-- Order Form Modal -->
+<div id="order-form-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); z-index:10000; align-items:center; justify-content:center;">
+  <div style="background: #fff; color: #222; padding: 30px 25px 20px 25px; border-radius: 18px; max-width: 400px; width: 90%; box-shadow: 0 0 30px rgba(0,255,255,0.2); position:relative;">
+    <button id="close-order-form" style="position:absolute; top:10px; left:10px; background:none; border:none; font-size:1.5em; color:#ff0066; cursor:pointer;">&times;</button>
+    <h2 style="text-align:center; color:#00cc99; margin-bottom:20px;">طلب المنتج</h2>
+    <form id="order-form" autocomplete="off">
+      <div style="margin-bottom:15px; text-align:right;">
+        <label for="fullName" style="display:block; margin-bottom:5px;">الاسم الكامل</label>
+        <input type="text" id="fullName" name="fullName" required style="width:100%; padding:8px; border-radius:7px; border:1px solid #ccc;">
+      </div>
+      <div style="margin-bottom:15px; text-align:right;">
+        <label for="address" style="display:block; margin-bottom:5px;">العنوان الكامل</label>
+        <textarea id="address" name="address" required style="width:100%; padding:8px; border-radius:7px; border:1px solid #ccc; min-height:50px;"></textarea>
+      </div>
+      <div style="margin-bottom:20px; text-align:right;">
+        <label for="phone" style="display:block; margin-bottom:5px;">رقم الهاتف</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9\-\+\s]{8,}" style="width:100%; padding:8px; border-radius:7px; border:1px solid #ccc;">
+      </div>
+      <button type="submit" style="width:100%; background:linear-gradient(135deg,#00ffcc,#00cc99); color:#222; font-weight:bold; font-size:1.1em; padding:10px 0; border:none; border-radius:10px; cursor:pointer;">إرسال الطلب</button>
+    </form>
+  </div>
+</div>
+
+<script>
+(function() {
+  var showBtn = document.getElementById('show-order-form-btn');
+  var modal = document.getElementById('order-form-modal');
+  var closeBtn = document.getElementById('close-order-form');
+  var form = document.getElementById('order-form');
+  if (showBtn && modal && closeBtn && form) {
+    showBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      modal.style.display = 'flex';
+      form.style.display = 'block';
+    });
+    closeBtn.addEventListener('click', function() {
+      modal.style.display = 'none';
+    });
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) modal.style.display = 'none';
+    });
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var name = document.getElementById('fullName').value.trim();
+      var address = document.getElementById('address').value.trim();
+      var phone = document.getElementById('phone').value.trim();
+
+      fetch('https://script.google.com/macros/s/AKfycbw6Dsx7sdO1TTZdWEggDv7n7Lsd1_ieu-0-DO3GvosNqyJteYTS1VoW19e3LvlJCW-w/exec', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    name: name,
+    address: address,
+    phone: phone
+  })
+})
+.then(response => response.text())
+.then(data => {
+  alert(data || '✅ تم إرسال طلبك بنجاح!');
+  modal.style.display = 'none';
+  form.reset();
+})
+.catch(() => {
+  alert('❌ حدث خطأ أثناء إرسال الطلب. حاول مرة أخرى.');
+});
+    });
+  }
+})();
+</script>
+
+
+</body>
+</html>
